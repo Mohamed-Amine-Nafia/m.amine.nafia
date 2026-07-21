@@ -8,44 +8,66 @@
   </head>
   <body class="bg-primary w-full">
     <div class="w-full h-dvh max-w-290 mx-auto px-3.5">
-      <header class="flex items-center justify-between">
+      <header
+        class="flex items-center justify-between py-3.5 md:max-w-120 md:mx-auto md:bg-white md:rounded-full md:px-3.5 md:gap-5"
+      >
         <!--LOGO-->
-        <img class="w-34" src="./images/logo.webp" alt="logo" />
+        <img class="w-12" src="./images/logo.svg" alt="logo" />
         <!--MOBILE MENU-->
-        <img id="menu" class="w-9" src="./images/menu.svg" alt="menu" />
+        <img
+          id="menu"
+          class="w-9 md:hidden"
+          src="./images/menu.svg"
+          alt="menu"
+        />
+        <!--DESKTOP NAVBAR-->
+        <nav class="hidden md:block">
+          <ul class="hidden md:flex items-center justify-center gap-6 text-sm">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <!--DESKTOP SOCIAL MEDIA-->
+
+        <div class="hidden md:flex items-center gap-3.5">
+          <img class="w-7" src="./images/github.png" alt="github" />
+          <img class="w-7" src="./images/linkedin.png" alt="linkedin" />
+        </div>
       </header>
       <!--MOBILE NAVBAR-->
       <nav
         id="mobile-navbar"
-        class="fixed flex flex-col items-center bottom-3.5 top-3.5 left-3.5 text-sm duration-700 ease-initial bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5"
+        class="fixed flex flex-col items-center bottom-3.5 top-3.5 left-3.5 text-sm duration-700 ease-initial bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5 md:hidden"
       >
-        <img class="w-20" src="./images/logo_2.svg" alt="logo" />
+        <img class="w-12" src="./images/logo.svg" alt="logo" />
         <ul
           class="text-grey flex flex-col items-center justify-center gap-6 p-3.5 h-full"
         >
           <li class="flex flex-col justify-center items-center gap-1">
             <img
-              class="w-5 invert-100"
+              class="w-6 invert-100"
               src="./images/house.svg"
               alt="house"
             /><a href="#">Home</a>
           </li>
           <li class="flex flex-col justify-center items-center gap-1">
-            <img class="w-5 invert-100" src="./images/info.svg" alt="info" /><a
+            <img class="w-6 invert-100" src="./images/info.svg" alt="info" /><a
               href="#"
               >About</a
             >
           </li>
           <li class="flex flex-col items-center justify-center gap-1">
             <img
-              class="w-5 invert-100"
+              class="w-6 invert-100"
               src="./images/folder.svg"
               alt="folder"
             /><a href="#">Projects</a>
           </li>
           <li class="flex flex-col justify-center items-center gap-1">
             <img
-              class="w-5 invert-100"
+              class="w-6 invert-100"
               src="./images/message.svg"
               alt="message"
             /><a href="#">Contacts</a>
