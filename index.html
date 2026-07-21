@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-primary w-full">
+    <div class="w-full h-dvh max-w-290 mx-auto px-3.5">
+      <header class="flex items-center justify-between">
+        <!--LOGO-->
+        <img class="w-34" src="./images/logo.webp" alt="logo" />
+        <!--MOBILE MENU-->
+        <img id="menu" class="w-9" src="./images/menu.svg" alt="menu" />
+      </header>
+      <!--MOBILE NAVBAR-->
+      <nav
+        id="mobile-navbar"
+        class="fixed flex flex-col items-center bottom-3.5 top-3.5 left-3.5 text-sm duration-700 ease-initial bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5"
+      >
+        <img class="w-20" src="./images/logo_2.svg" alt="logo" />
+        <ul
+          class="text-grey flex flex-col items-center justify-center gap-6 p-3.5 h-full"
+        >
+          <li class="flex flex-col justify-center items-center gap-1">
+            <img
+              class="w-5 invert-100"
+              src="./images/house.svg"
+              alt="house"
+            /><a href="#">Home</a>
+          </li>
+          <li class="flex flex-col justify-center items-center gap-1">
+            <img class="w-5 invert-100" src="./images/info.svg" alt="info" /><a
+              href="#"
+              >About</a
+            >
+          </li>
+          <li class="flex flex-col items-center justify-center gap-1">
+            <img
+              class="w-5 invert-100"
+              src="./images/folder.svg"
+              alt="folder"
+            /><a href="#">Projects</a>
+          </li>
+          <li class="flex flex-col justify-center items-center gap-1">
+            <img
+              class="w-5 invert-100"
+              src="./images/message.svg"
+              alt="message"
+            /><a href="#">Contacts</a>
+          </li>
+        </ul>
+        <div class="flex flex-col gap-3.5">
+          <img class="w-7" src="./images/github.png" alt="github" />
+          <img class="w-7" src="./images/linkedin.png" alt="linkedin" />
+        </div>
+      </nav>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
