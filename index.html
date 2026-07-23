@@ -3,79 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohamed Amine Nafia is a Frontend Developer specializing in building modern, responsive, and user-friendly web experiences with HTML, CSS, JavaScript, and React."
+    />
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-primary w-full">
-    <div class="w-full h-dvh max-w-290 mx-auto px-3.5">
-      <header
-        class="flex items-center justify-between py-3.5 md:max-w-120 md:mx-auto md:bg-white md:rounded-full md:px-3.5 md:gap-5"
-      >
-        <!--LOGO-->
-        <img class="w-12" src="./images/logo.svg" alt="logo" />
-        <!--MOBILE MENU-->
-        <img
-          id="menu"
-          class="w-9 md:hidden"
-          src="./images/menu.svg"
-          alt="menu"
-        />
-        <!--DESKTOP NAVBAR-->
-        <nav class="hidden md:block">
-          <ul class="hidden md:flex items-center justify-center gap-6 text-sm">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-        </nav>
-        <!--DESKTOP SOCIAL MEDIA-->
+  <body
+    class="w-full font-Manrope bg-[url('/images/bg-mobile.svg')] md:bg-[url('/images/bg-desktop.svg')] bg-no-repeat bg-cover dark:bg-[url('/images/dark-bg-mobile.png')] md:dark:bg-[url('/images/dark-bg-desktop.png')]"
+  >
+    <div class="w-full h-dvh mx-auto px-3.5">
+      <section>
+        <header
+          role="banner"
+          class="flex items-center justify-between md:justify-center py-3.5 md:max-w-200 md:mx-auto md:px-3.5"
+        >
+          <!--LOGO-->
+          <div class="flex items-center gap-2 md:flex-1 md:whitespace-nowrap">
+            <img class="w-12" src="./images/logo_2.webp" alt="logo" />
+            <span class="text-sm text-grey font-medium dark:text-primary"
+              >Available for work</span
+            >
+            <span
+              class="h-2 w-2 rounded-full inline-block bg-green-500 animate-pulse"
+            ></span>
+          </div>
+          <!--MOBILE MENU-->
+          <img
+            id="menu"
+            class="w-9 md:hidden cursor-pointer dark:invert-100"
+            src="./images/menu.svg"
+            alt="menu"
+          />
+          <!--DESKTOP NAVBAR-->
+          <nav
+            role="navigation"
+            class="hidden md:flex md:flex-2 md:justify-center"
+          >
+            <ul
+              class="hidden md:flex items-center justify-center gap-6 text-sm font-medium text-grey dark:text-primary"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+            </ul>
+          </nav>
 
-        <div class="hidden md:flex items-center gap-3.5">
-          <img class="w-7" src="./images/github.png" alt="github" />
-          <img class="w-7" src="./images/linkedin.png" alt="linkedin" />
+          <div class="hidden md:flex items-center md:justify-end md:flex-1">
+            <a
+              class="bg-grey text-primary text-sm font-medium py-1.5 px-4 rounded-md"
+              href="#"
+              >Start a Project</a
+            >
+          </div>
+        </header>
+        <div class="w-full flex flex-col items-center relative">
+          <div
+            class="translate-y-16 w-fit h-fit before:-z-10 before:bg-linear-to-t before:from-transparent before:to-green-950/50 before:absolute before:content[''] before:h-[120%] before:w-full before:rounded-tl-full before:rounded-tr-full before:-top-10 relative"
+          >
+            <img class="" src="/images/developer.webp" alt="developer" />
+          </div>
+          <div class="translate-y-24 text-center">
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl text-grey dark:text-primary"
+            >
+              Mohamed Amine Nafia
+            </h2>
+            <span class="mt-3 inline-block text-light-grey text-lg md:text-2xl"
+              >FRONTEND DEVELOPER</span
+            >
+          </div>
+          <div class="flex gap-5 translate-y-30 md:gap-10">
+            <a href="#"
+              ><img
+                class="w-6 grayscale-100 hover:grayscale-0"
+                src="/images/facebook.webp"
+                alt="facebook"
+            /></a>
+            <a href="#"
+              ><img
+                class="w-6 grayscale-100 hover:grayscale-0"
+                src="/images/github.webp"
+                alt="github"
+            /></a>
+            <a href="#"
+              ><img
+                class="w-6 grayscale-100 hover:grayscale-0"
+                src="/images/linkedin.webp"
+                alt="linkedin"
+            /></a>
+          </div>
         </div>
-      </header>
+        <div class="absolute bottom-3 right-5 animate-bounce">
+          <a href="#"
+            ><img
+              class="w-22 md:w-28"
+              src="/images/whatsapp.webp"
+              alt="whatsapp"
+          /></a>
+        </div>
+      </section>
+
       <!--MOBILE NAVBAR-->
       <nav
+        role="navigation"
         id="mobile-navbar"
-        class="fixed flex flex-col items-center bottom-3.5 top-3.5 left-3.5 text-sm duration-700 ease-initial bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5 md:hidden"
+        class="fixed flex -translate-x-50 flex-col items-center bottom-3.5 top-3.5 left-3.5 text-sm duration-500 ease-linear bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5 md:hidden dark:bg-primary/10"
       >
-        <img class="w-12" src="./images/logo.svg" alt="logo" />
+        <img class="w-12" src="./images/logo_2.webp" alt="logo" />
         <ul
-          class="text-grey flex flex-col items-center justify-center gap-6 p-3.5 h-full"
+          class="text-grey flex flex-col items-center justify-center gap-6 p-3.5 h-full dark:text-primary"
         >
           <li class="flex flex-col justify-center items-center gap-1">
             <img
-              class="w-6 invert-100"
+              class="w-6 invert-100 dark:invert-0"
               src="./images/house.svg"
               alt="house"
             /><a href="#">Home</a>
           </li>
           <li class="flex flex-col justify-center items-center gap-1">
-            <img class="w-6 invert-100" src="./images/info.svg" alt="info" /><a
-              href="#"
-              >About</a
-            >
+            <img
+              class="w-6 invert-100 dark:invert-0"
+              src="./images/info.svg"
+              alt="info"
+            /><a href="#">About</a>
           </li>
           <li class="flex flex-col items-center justify-center gap-1">
             <img
-              class="w-6 invert-100"
+              class="w-6 invert-100 dark:invert-0"
               src="./images/folder.svg"
               alt="folder"
             /><a href="#">Projects</a>
           </li>
           <li class="flex flex-col justify-center items-center gap-1">
             <img
-              class="w-6 invert-100"
+              class="w-6 invert-100 dark:invert-0"
               src="./images/message.svg"
               alt="message"
             /><a href="#">Contacts</a>
           </li>
         </ul>
-        <div class="flex flex-col gap-3.5">
-          <img class="w-7" src="./images/github.png" alt="github" />
-          <img class="w-7" src="./images/linkedin.png" alt="linkedin" />
+        <div class="bg-grey h-19 w-8 rounded-full relative">
+          <span
+            id="mode-switch"
+            class="bg-primary w-8 h-8 left-0 rounded-full inline-block absolute border-2 border-grey duration-300 ease-linear dark:bg-green-500"
+          ></span>
         </div>
       </nav>
     </div>
