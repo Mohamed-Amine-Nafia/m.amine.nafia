@@ -11,10 +11,72 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body
-    class="w-full h-screen font-Manrope bg-primary dark:bg-slate-950 duration-300 ease-linear"
+    class="w-full h-dvh font-Manrope bg-primary dark:bg-slate-950 duration-300 ease-linear scroll-smooth"
   >
-    <div class="w-full h-dvh mx-auto px-3.5">
-      <section>
+    <div class="w-full h-screen mx-auto px-3.5">
+      <header
+        class="flex items-center sticky top-2 justify-between md:justify-center md:max-w-240 md:mx-auto px-2 py-1 z-40 bg-white/5 backdrop-blur-3xl rounded-lg md:px-3"
+      >
+        <!--LOGO-->
+        <div class="flex items-center gap-2 md:flex-1 md:whitespace-nowrap">
+          <img class="w-12" src="./images/logo_2.webp" alt="logo" />
+          <span class="text-sm text-grey font-medium dark:text-primary"
+            >Available for work</span
+          >
+          <span
+            class="h-2 w-2 rounded-full inline-block bg-green-500 animate-pulse"
+          ></span>
+        </div>
+        <!--MOBILE MENU-->
+        <img
+          id="menu"
+          class="w-9 md:hidden cursor-pointer dark:invert-100"
+          src="./images/menu.svg"
+          alt="menu"
+        />
+        <!--DESKTOP NAVBAR-->
+        <nav
+          role="navigation"
+          class="hidden md:flex md:flex-2 md:justify-center"
+        >
+          <ul
+            class="hidden md:flex items-center justify-center gap-6 text-sm font-medium"
+          >
+            <li
+              class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
+            >
+              <a href="#intro-section">Home</a>
+            </li>
+            <li
+              class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
+            >
+              <a href="#about-section">About</a>
+            </li>
+            <li
+              class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
+            >
+              <a href="#projects-section">Projects</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-4 md:justify-end md:flex-1">
+          <div
+            class="bg-[url('/images/sunny.jpg')] w-16 h-8 rounded-full relative bg-cover bg-center bg-no-repeat dark:bg-[url('/images/night.jpg')] duration-300 ease-linear cursor-pointer"
+          >
+            <span
+              id="mode-switch-desktop"
+              class="bg-indigo-500 dark:bg-yellow-500 w-8 h-8 rounded-full inline-block absolute duration-300 ease-linear"
+            ></span>
+          </div>
+          <a
+            class="bg-grey text-primary dark:text-slate-950 text-sm font-medium py-2 px-4 rounded-full whitespace-nowrap dark:bg-emerald-500 cursor-pointer dark:hover:bg-emerald-600 hover:bg-gray-900 duration-300 ease-linear"
+            href="#"
+            >Start a Project</a
+          >
+        </div>
+      </header>
+      <section id="intro-section">
         <div
           class="bg-indigo-100 dark:bg-indigo-950 absolute left-0 top-32 w-32 h-32 md:w-54 md:h-54 rounded-full blur-3xl -z-10"
         ></div>
@@ -24,71 +86,7 @@
         <div
           class="absolute bg-slate-100 dark:bg-slate-700 w-32 h-32 md:w-54 md:h-54 rounded-full left-1/3 bottom-12 blur-3xl -z-10"
         ></div>
-        <header
-          role="banner"
-          class="flex items-center sticky top-0 justify-between md:justify-center py-3.5 md:max-w-240 md:mx-auto md:px-3.5"
-        >
-          <!--LOGO-->
-          <div class="flex items-center gap-2 md:flex-1 md:whitespace-nowrap">
-            <img class="w-12" src="./images/logo_2.webp" alt="logo" />
-            <span class="text-sm text-grey font-medium dark:text-primary"
-              >Available for work</span
-            >
-            <span
-              class="h-2 w-2 rounded-full inline-block bg-green-500 animate-pulse"
-            ></span>
-          </div>
-          <!--MOBILE MENU-->
-          <img
-            id="menu"
-            class="w-9 md:hidden cursor-pointer dark:invert-100"
-            src="./images/menu.svg"
-            alt="menu"
-          />
-          <!--DESKTOP NAVBAR-->
-          <nav
-            role="navigation"
-            class="hidden md:flex md:flex-2 md:justify-center"
-          >
-            <ul
-              class="hidden md:flex items-center justify-center gap-6 text-sm font-medium"
-            >
-              <li
-                class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
-              >
-                <a href="#">Home</a>
-              </li>
-              <li
-                class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
-              >
-                <a href="#">About</a>
-              </li>
-              <li
-                class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
-              >
-                <a href="#">Projects</a>
-              </li>
-            </ul>
-          </nav>
 
-          <div
-            class="hidden md:flex items-center gap-4 md:justify-end md:flex-1"
-          >
-            <div
-              class="bg-[url('/images/sunny.jpg')] w-16 h-8 rounded-full relative bg-cover bg-center bg-no-repeat dark:bg-[url('/images/night.jpg')] duration-300 ease-linear cursor-pointer"
-            >
-              <span
-                id="mode-switch-desktop"
-                class="bg-indigo-500 dark:bg-yellow-500 w-8 h-8 left-0 rounded-full inline-block absolute border-2 border-transparent duration-300 ease-linear"
-              ></span>
-            </div>
-            <a
-              class="bg-grey text-primary dark:text-slate-950 text-sm font-medium py-2 px-4 rounded-full whitespace-nowrap dark:bg-emerald-500 cursor-pointer dark:hover:bg-emerald-600 hover:bg-gray-900 duration-300 ease-linear"
-              href="#"
-              >Start a Project</a
-            >
-          </div>
-        </header>
         <div class="w-full flex flex-col items-center justify-center">
           <div class="w-full flex justify-center">
             <img
@@ -99,44 +97,44 @@
           </div>
           <div class="translate-y-5 text-center">
             <h2
-              class="text-3xl md:text-5xl lg:text-5xl text-grey dark:text-primary"
+              class="text-3xl md:text-5xl lg:text-5xl text-grey dark:text-primary mt-2"
             >
               Mohamed Amine Nafia
             </h2>
-            <span class="mt-3 inline-block text-light-grey text-lg md:text-3xl"
+            <span class="mt-3 inline-block text-light-grey text-lg md:text-2xl"
               >FRONTEND DEVELOPER</span
             >
           </div>
           <div
-            class="flex items-center py-1 px-2 gap-5 translate-y-8 md:gap-10 rounded-sm md:mt-3"
+            class="flex items-center py-1 px-2 gap-5 translate-y-8 md:gap-7 rounded-sm md:mt-2"
           >
-            <span class="text-sm md:text-xl text-grey dark:text-primary"
+            <span class="text-sm md:text-lg text-grey dark:text-primary"
               >FIND ME ON
             </span>
             <a href="#"
               ><img
-                class="w-5 md:w-6 grayscale-100 hover:grayscale-0"
+                class="w-5 grayscale-100 hover:grayscale-0 duration-200 ease-linear"
                 src="/images/facebook.webp"
                 alt="facebook"
             /></a>
             <a href="#"
               ><img
-                class="w-5 md:w-6 grayscale-100 hover:grayscale-0"
+                class="w-5 grayscale-100 hover:grayscale-0 duration-200 ease-linear"
                 src="/images/github.webp"
                 alt="github"
             /></a>
             <a href="#"
               ><img
-                class="w-5 md:w-6 grayscale-100 hover:grayscale-0"
+                class="w-5 grayscale-100 hover:grayscale-0 duration-200 ease-linear"
                 src="/images/linkedin.webp"
                 alt="linkedin"
             /></a>
           </div>
         </div>
-        <div class="fixed bottom-3 right-5 animate-bounce">
+        <div class="fixed bottom-3 right-5 animate-bounce z-50">
           <a href="#"
             ><img
-              class="w-28 md:w-36"
+              class="w-28 md:w-32"
               src="/images/whatsapp.webp"
               alt="whatsapp"
           /></a>
@@ -147,8 +145,14 @@
       <nav
         role="navigation"
         id="mobile-navbar"
-        class="fixed flex -translate-x-50 flex-col items-center bottom-3.5 top-3.5 left-3.5 text-sm duration-500 ease-linear bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5 md:hidden dark:bg-primary/10"
+        class="fixed flex -translate-x-50 flex-col items-center bottom-3.5 top-3.5 left-3.5 text-sm duration-500 ease-linear bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5 md:hidden dark:bg-primary/10 z-50"
       >
+        <div
+          id="hide-navbar"
+          class="absolute w-9 h-9 -right-9 top-10 flex items-center justify-center cursor-pointer"
+        >
+          <img class="w-full" src="/images/remove.png" alt="remove icon" />
+        </div>
         <img class="w-12" src="./images/logo_2.webp" alt="logo" />
         <ul
           class="text-grey flex flex-col items-center justify-center gap-6 p-3.5 h-full dark:text-primary"
@@ -158,21 +162,21 @@
               class="w-6 invert-100 dark:invert-0"
               src="./images/house.svg"
               alt="house"
-            /><a href="#">Home</a>
+            /><a href="#intro-section">Home</a>
           </li>
           <li class="flex flex-col justify-center items-center gap-1">
             <img
               class="w-6 invert-100 dark:invert-0"
               src="./images/info.svg"
               alt="info"
-            /><a href="#">About</a>
+            /><a href="#about-section">About</a>
           </li>
           <li class="flex flex-col items-center justify-center gap-1">
             <img
               class="w-6 invert-100 dark:invert-0"
               src="./images/folder.svg"
               alt="folder"
-            /><a href="#">Projects</a>
+            /><a href="#projects-section">Projects</a>
           </li>
           <li class="flex flex-col justify-center items-center gap-1">
             <img
@@ -191,6 +195,108 @@
           ></span>
         </div>
       </nav>
+      <!--About me-->
+      <section id="about-section" class="mt-32 text-grey relative">
+        <div
+          class="bg-violet-100 absolute left-1/2 top-1/2 w-56 h-56 rounded-full -translate-y-1/2 -translate-x-1/2 blur-3xl dark:bg-violet-950"
+        ></div>
+        <div
+          class="text-center text-base font-medium bg-gray-200/45 backdrop-blur-3xl rounded-lg py-2 dark:bg-gray-900/45 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg border border-gray-200 dark:border-gray-900"
+        >
+          <h3>ABOUT ME</h3>
+        </div>
+        <div class="mt-2">
+          <div class="w-full flex gap-2">
+            <div
+              class="bg-gray-200/45 backdrop-blur-3xl rounded-lg flex flex-col items-center flex-3 md:flex-1 p-3 dark:bg-gray-900/45 duration-300 ease-linear border border-gray-200 dark:border-gray-900"
+            >
+              <img
+                class="w-56 md:w-80 lg:w-96 rounded-full"
+                src="/images/developer_2.png"
+                alt="developer"
+              />
+              <a
+                class="inline-block py-2.5 px-4 bg-grey text-primary mt-5 text-sm rounded-full dark:bg-emerald-500 dark:text-grey duration-300 ease-linear hover:bg-gray-900 dark:hover:bg-emerald-700 md:text-base md:py-3 md:px-8"
+                href="#"
+                >Let's build togheter</a
+              >
+            </div>
+            <div
+              class="flex flex-col-reverse gap-2 items-center justify-between flex-1"
+            >
+              <div
+                class="flex flex-col md:flex-row md:h-fit h-full items-center bg-gray-200/45 backdrop-blur-3xl justify-between w-full p-3 rounded-lg dark:bg-gray-900/45 duration-300 ease-linear border border-gray-200 dark:border-gray-900"
+              >
+                <img
+                  class="w-7 md:w-9 lg:w-11"
+                  src="/images/html.png"
+                  alt="html logo"
+                />
+                <img
+                  class="w-7 md:w-9 lg:w-11"
+                  src="/images/css.png"
+                  alt="css logo"
+                />
+                <img
+                  class="w-7 md:w-9 lg:w-11"
+                  src="/images/tailwind.png"
+                  alt="tailwindcss logo"
+                />
+                <img
+                  class="w-7 md:w-9 lg:w-11"
+                  src="/images/javascript.png"
+                  alt="javascript logo"
+                />
+
+                <img
+                  class="w-7 md:w-9 lg:w-11"
+                  src="/images/react.png"
+                  alt="react logo"
+                />
+                <img
+                  class="w-7 md:w-9 lg:w-11"
+                  src="/images/git.png"
+                  alt="git logo"
+                />
+                <img
+                  class="w-7 md:w-9 lg:w-11"
+                  src="/images/github.webp"
+                  alt="github logo"
+                />
+              </div>
+              <div
+                class="bg-gray-200/45 backdrop-blur-3xl hidden md:block h-full p-3 dark:bg-gray-900/45 duration-300 ease-linear border border-gray-200 dark:border-gray-900"
+              >
+                <p
+                  class="text-grey leading-6 md:leading-8 lg:leading-10 dark:text-primary duration-300 ease-linear text-xl"
+                >
+                  My goal isn't to simply build another website. I want to
+                  create digital experiences that help businesses look
+                  professional, connect with their audience, and turn visitors
+                  into customers. I work mainly with JavaScript, React, Tailwind
+                  CSS, and modern frontend technologies, while continuously
+                  improving my skills and learning new ways to build better
+                  products.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="text-sm bg-gray-200/45 backdrop-blur-3xl p-3 mt-2 rounded-lg dark:bg-gray-900/45 duration-300 ease-linear md:hidden border border-gray-200 dark:border-gray-900"
+          >
+            <p
+              class="text-grey leading-6 dark:text-primary duration-300 ease-linear"
+            >
+              My goal isn't to simply build another website. I want to create
+              digital experiences that help businesses look professional,
+              connect with their audience, and turn visitors into customers. I
+              work mainly with JavaScript, React, Tailwind CSS, and modern
+              frontend technologies, while continuously improving my skills and
+              learning new ways to build better products.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="app.js"></script>
   </body>
