@@ -10,7 +10,7 @@
 }
 
 .items-container {
-  animation: spine 15s linear infinite;
+  animation: spine 20s linear infinite;
 }
 
 @keyframes spine {
@@ -26,6 +26,6 @@
     left: 50%;
     transform: translate(-50%, -50%)
       rotate(calc(360deg / var(--quantity) * var(--position)))
-      translateY(-480px);
+      translateY(-475px);
   }
 }
