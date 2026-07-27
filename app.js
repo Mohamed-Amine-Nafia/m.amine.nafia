@@ -5,6 +5,10 @@ const mobileNavbar = document.getElementById("mobile-navbar");
 const modeSwith = document.getElementById("mode-switch");
 const modeSwithDesktop = document.getElementById("mode-switch-desktop");
 
+const footerDate = document.getElementById("footer-date");
+
+const date = new Date();
+
 menuBtn.addEventListener("click", () => {
   mobileNavbar.classList.toggle("-translate-x-50");
 });
@@ -22,3 +26,6 @@ modeSwithDesktop.addEventListener("click", () => {
 hideNavbar.addEventListener("click", () => {
   mobileNavbar.classList.toggle("-translate-x-50");
 });
+
+footerDate.innerText =
+  "Copyright ©" + date.getFullYear() + "- All right reserved";
