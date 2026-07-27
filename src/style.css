@@ -1,0 +1,31 @@
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+    rotate(calc(360deg / var(--quantity) * var(--position))) translateY(-260px);
+}
+.items-container:hover {
+  animation-play-state: paused;
+}
+
+.items-container {
+  animation: spine 15s linear infinite;
+}
+
+@keyframes spine {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+      rotate(calc(360deg / var(--quantity) * var(--position)))
+      translateY(-480px);
+  }
+}
