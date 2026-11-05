@@ -15,7 +15,9 @@
   <body
     class="w-full h-dvh font-Manrope bg-primary dark:bg-slate-950 duration-300 ease-linear scroll-smooth"
   >
-    <div class="w-full min-h-screen mx-auto px-3.5">
+    <div
+      class="w-full min-h-screen mx-auto px-1.5 bg-primary dark:bg-slate-950"
+    >
       <header
         class="flex items-center sticky top-2 justify-between md:justify-center md:max-w-240 md:mx-auto px-2 py-1 z-50 bg-grey/10 backdrop-blur-3xl rounded-lg md:px-3 dark:bg-primary/10"
       >
@@ -73,12 +75,12 @@
           </div>
           <a
             class="bg-grey text-primary dark:text-slate-950 text-sm font-medium py-2 px-4 rounded-full whitespace-nowrap dark:bg-emerald-500 cursor-pointer dark:hover:bg-emerald-600 hover:bg-gray-900 duration-300 ease-linear"
-            href="#"
+            href="#contact"
             >Start a Project</a
           >
         </div>
       </header>
-      <section id="intro-section ">
+      <section id="intro-section">
         <div
           class="bg-indigo-200 dark:bg-indigo-950 absolute left-0 top-32 w-32 h-32 md:w-54 md:h-54 rounded-full blur-3xl -z-10"
         ></div>
@@ -189,7 +191,7 @@
               class="w-6 invert-100 dark:invert-0"
               src="./images/message.svg"
               alt="message"
-            /><a href="#">Contacts</a>
+            /><a href="#contact">Contacts</a>
           </li>
         </ul>
         <div
@@ -202,7 +204,10 @@
         </div>
       </nav>
       <!--About me-->
-      <section id="about-section" class="mt-32 text-grey relative">
+      <section
+        id="about-section"
+        class="mt-24 text-grey relative bg-primary dark:bg-slate-950"
+      >
         <div
           class="bg-emerald-200 absolute left-10 top-24 w-32 h-32 rounded-full -translate-y-1/2 -translate-x-1/2 blur-3xl dark:bg-violet-950"
         ></div>
@@ -210,13 +215,23 @@
           class="bg-fuchsia-300 absolute right-10 bottom-10 w-20 h-20 rounded-full blur-3xl dark:bg-violet-950"
         ></div>
         <div
-          class="text-center text-base font-medium bg-gray-200/45 backdrop-blur-3xl rounded-lg py-2 dark:bg-gray-900/45 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg border border-gray-200 dark:border-gray-900"
+          class="text-center py-2 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg dark:border-gray-900 relative"
         >
-          <h3>ABOUT ME</h3>
+          <h3
+            class="text-9xl text-black w-full dark:text-primary font-extrabold absolute opacity-65 backdrop-blur-sm left-0 z-10"
+          >
+            ABOUT
+          </h3>
         </div>
-        <div class="mt-8 h-100 overflow-hidden relative">
+        <div
+          class="mt-20 h-90 bg-primary dark:bg-slate-950 overflow-hidden relative"
+        >
+          <span
+            class="text-gray-400 text-9xl absolute font-extrabold opacity-50 left-1/2 -translate-x-1/2 z-30 top-1/4"
+            >ME</span
+          >
           <div
-            class="absolute top-24 md:top-2/5 left-1/2 -translate-x-1/2 text-center w-full z-40 md:px-12"
+            class="absolute bg-transparent bottom-0 md:top-2/5 left-1/2 -translate-x-1/2 text-center w-full z-40 md:px-12 p-2"
           >
             <h4
               class="text-grey text-3xl md:text-4xl font-bold w-full dark:text-primary duration-300 ease-linear"
@@ -235,142 +250,149 @@
               thoughtful design.
             </p>
             <a
-              class="inline-flex text-sm font-medium bg-grey hover:bg-gray-950 py-2 px-4 rounded-full text-primary mt-4 dark:bg-emerald-500 dark:text-grey dark:hover:bg-emerald-600 duration-300 ease-linear md:mt-6 md:text-base md:py-3 md:px-6"
-              href=""
+              class="inline-flex text-sm font-medium bg-accent hover:bg-blue-700 py-2.5 px-4 rounded-full text-primary mt-4 dark:bg-orange-500 dark:text-grey dark:hover:bg-orange-600 duration-300 ease-linear md:mt-6 md:text-base md:py-3 md:px-6"
+              href="#contact"
               >Let's build together</a
             >
           </div>
           <div
             style="--quantity: 14"
-            class="bg-transparent rounded-full h-140 w-140 absolute left-1/2 top-0 md:top-2 -translate-x-1/2 items-container md:h-250 md:w-250 text-grey dark:text-primary text-xs"
+            class="bg-white/5 backdrop-blur-3xl rounded-full h-190 w-190 absolute left-1/2 top-0 md:top-2 -translate-x-1/2 items-container md:h-250 md:w-250 text-grey dark:text-primary text-xs before:h-150 before:w-150 before:bg-primary before:content[''] before:absolute before:rounded-full before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-10 dark:before:bg-slate-950 z-20"
           >
             <div
               style="--position: 1"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex items-center justify-center font-bold gap-1.5 w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/css.png" alt="" />
-              <span>Css</span>
+              <img class="w-10 md:w-10" src="/images/css.png" alt="" />
+              <!-- <span>Css</span> -->
             </div>
             <div
               style="--position: 2"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
-              <img class="w-7 md:w-9" src="/images/html.png" alt="" />
-              <span>Html</span>
+              <img class="w-10 md:w-9" src="/images/html.png" alt="" />
+              <!-- <span>Html</span> -->
             </div>
             <div
               style="--position: 3"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/git.png" alt="" />
-              <span>Git</span>
+              <img class="w-10 md:w-10" src="/images/git.png" alt="" />
+              <!-- <span>Git</span> -->
             </div>
             <div
               style="--position: 4"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/tailwind.png" alt="" />
-              <span>Tailwindcss</span>
+              <img class="w-10 md:w-10" src="/images/tailwind.png" alt="" />
+              <!-- <span>Tailwindcss</span> -->
             </div>
             <div
               style="--position: 5"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/javascript.png" alt="" />
-              <span>Javascript</span>
+              <img class="w-10 md:w-10" src="/images/javascript.png" alt="" />
+              <!-- <span>Javascript</span> -->
             </div>
             <div
               style="--position: 6"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
               <img
-                class="w-8 md:w-10 dark:invert-100"
+                class="w-10 md:w-10 dark:invert-100"
                 src="/images/github-mono-64px.png"
                 alt=""
               />
-              <span>Github</span>
+              <!-- <span>Github</span> -->
             </div>
             <div
               style="--position: 7"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/react.png" alt="" />
-              <span>React</span>
+              <img class="w-10 md:w-10" src="/images/react.png" alt="" />
+              <!-- <span>React</span> -->
             </div>
             <div
               style="--position: 8"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
               <img
-                class="w-8 md:w-10"
+                class="w-10 md:w-10"
                 src="/images/bootstrap-64px.png"
                 alt=""
               />
-              <span>Bootstrap</span>
+              <!-- <span>Bootstrap</span> -->
             </div>
             <div
               style="--position: 9"
-              class="item flex flex-col items-center font-bold"
+              class="item flex justify-center items-center font-bold w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/gsap-64px.png" alt="" />
-              <span>Gsap</span>
+              <img class="w-10 md:w-10" src="/images/gsap-64px.png" alt="" />
+              <!-- <span>Gsap</span> -->
             </div>
             <div
               style="--position: 10"
-              class="item flex flex-col items-center font-bold gap-4"
+              class="item flex justify-center items-center font-bold gap-4 w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/motion-64px.png" alt="" />
-              <span>Framer Motion</span>
+              <img class="w-10 md:w-10" src="/images/motion-64px.png" alt="" />
+              <!-- <span>Framer Motion</span> -->
             </div>
             <div
               style="--position: 11"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
               <img
-                class="w-8 md:w-10"
+                class="w-10 md:w-10"
                 src="/images/visual-studio-code-64px.png"
                 alt=""
               />
-              <span>Vs Code</span>
+              <!-- <span>Vs Code</span> -->
             </div>
             <div
               style="--position: 12"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
-              <img class="w-8 md:w-10" src="/images/axios-64px.png" alt="" />
-              <span>Axios</span>
+              <img class="w-10 md:w-10" src="/images/axios-64px.png" alt="" />
+              <!-- <span>Axios</span> -->
             </div>
             <div
               style="--position: 13"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
               <img
-                class="w-8 md:w-10"
+                class="w-10 md:w-10"
                 src="/images/material-ui-64px.png"
                 alt=""
               />
-              <span>Materal ui</span>
+              <!-- <span>Materal ui</span> -->
             </div>
             <div
               style="--position: 14"
-              class="item flex flex-col items-center font-bold gap-1.5"
+              class="item flex justify-center items-center font-bold gap-1.5 w-20 aspect-square"
             >
               <img
-                class="w-8 md:w-10 invert-100 dark:invert-0"
+                class="w-10 md:w-10 invert-100 dark:invert-0"
                 src="/images/shadcn-ui-64px.png"
                 alt=""
               />
-              <span>Shadcn ui</span>
+              <!-- <span>Shadcn ui</span> -->
             </div>
           </div>
         </div>
       </section>
       <!--Projects section-->
-      <section id="projects-section" class="relative mt-20 md:mt-32 text-grey">
+      <section
+        id="projects-section"
+        class="relative mt-5 bg-primary dark:bg-slate-950 md:mt-32 text-grey"
+      >
         <div
-          class="text-center text-base font-medium bg-gray-200/45 backdrop-blur-3xl rounded-lg py-2 dark:bg-gray-900/45 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg border border-gray-200 dark:border-gray-900"
+          class="text-center text-base font-medium py-2 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg relative"
         >
-          <h3>PROJECTS</h3>
+          <h3
+            class="text-9xl font-black top-0 absolute left-0 opacity-65 text-black dark:text-primary duration-100"
+          >
+            P<span class="text-7xl text-gray-400 opacity-80">ROJECTS</span>
+          </h3>
         </div>
         <div
           class="bg-emerald-200 -z-10 absolute left-10 top-24 w-32 h-32 rounded-full -translate-y-1/2 -translate-x-1/2 blur-3xl dark:bg-violet-950"
@@ -380,7 +402,7 @@
         ></div>
         <!--Projects container-->
         <div
-          class="grid mt-5 md:mt-8 grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4"
+          class="grid mt-28 md:mt-8 grid-cols-1 gap-2 md:grid-cols-3 lg:grid-cols-4"
         >
           <div
             class="bg-gray-200/45 backdrop-blur-3xl rounded-lg dark:bg-gray-900/45 duration-300 ease-linear border border-gray-200 dark:border-gray-900 p-2 cursor-pointer flex flex-col"
@@ -579,41 +601,45 @@
         </div>
       </section>
       <!--CONTACT SECTION-->
-      <section class="relative mt-20 md:mt-32 text-grey">
+      <section id="contact" class="relative mt-12 md:mt-32 text-grey">
         <div
-          class="text-center text-base font-medium bg-gray-200/45 backdrop-blur-3xl rounded-lg py-2 dark:bg-gray-900/45 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg border border-gray-200 dark:border-gray-900"
+          class="text-center text-base font-medium rounded-lg py-2 duration-300 ease-linear bg-primary dark:bg-slate-950 md:py-3 md:text-lg"
         >
-          <h3>Get In Touch</h3>
+          <h3
+            class="text-9xl font-black opacity-65 text-black whitespace-nowrap uppercase dark:text-primary"
+          >
+            Get <span class="text-3xl text-gray-400">In Touch</span>
+          </h3>
         </div>
         <div class="mt-4 dark:text-primary flex justify-center">
-          <form class="max-w-140">
-            <label for="name">Fullname:</label>
-            <input
-              type="text"
-              placeholder="Ex:Amine Nafia"
-              id="name"
-              class="w-full bg-gray-200/45 py-2 px-2 rounded-sm border border-gray-200 my-2 dark:bg-gray-900/45 dark:border-gray-900"
-            />
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              placeholder="Example@email.com"
-              id="email"
-              class="w-full bg-gray-200/45 py-2 px-2 rounded-sm border border-gray-200 my-2 dark:bg-gray-900/45 dark:border-gray-900"
-            />
-            <label for="message">Message:</label>
+          <form class="w-full max-w-140 text-black">
+            <div class="flex w-full gap-1.5">
+              <input
+                type="text"
+                placeholder="Ex: Amine Nafia"
+                id="name"
+                class="text-sm w-1/2 bg-gray-100 py-3 px-2 rounded-sm border border-gray-200 my-2 dark:bg-gray-900/45 dark:border-gray-900"
+              />
+
+              <input
+                type="email"
+                placeholder="Example@email.com"
+                id="email"
+                class="text-sm w-1/2 bg-gray-100 py-3 px-2 rounded-sm border border-gray-200 my-2 dark:bg-gray-900/45 dark:border-gray-900"
+              />
+            </div>
             <textarea
               name="message"
               id="message"
               cols="3"
               rows="4"
-              class="w-full bg-gray-200/45 py-2.5 px-2 rounded-sm border border-gray-200 my-2 dark:bg-gray-900/45 dark:border-gray-900"
-              placeholder="Hi there..."
+              class="w-full text-sm bg-gray-100 py-2.5 px-2 rounded-sm border border-gray-200 my-2 dark:bg-gray-900/45 dark:border-gray-900"
+              placeholder="Your message..."
             ></textarea>
             <input
               type="submit"
               value="Send Message"
-              class="w-full bg-grey p-2.5 rounded-sm text-primary dark:bg-emerald-500 dark:text-grey hover:bg-gray-950 dark:hover:bg-emerald-600 cursor-pointer"
+              class="w-full mt-4 bg-grey p-4 rounded-sm text-primary dark:bg-orange-500 dark:text-grey hover:bg-gray-950 dark:hover:bg-orange-600 cursor-pointer"
             />
           </form>
         </div>
