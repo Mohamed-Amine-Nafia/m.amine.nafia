@@ -7,7 +7,7 @@
       name="description"
       content="Mohamed Amine Nafia is a Frontend Developer specializing in building modern, responsive, and user-friendly web experiences with HTML, CSS, JavaScript, and React."
     />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./src/output.css" />
 
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,8 +18,13 @@
     <div
       class="w-full min-h-screen mx-auto px-1.5 bg-primary dark:bg-slate-950"
     >
+      <!--OVERLAY-->
+      <div
+        class="overlay hidden duration-200 ease-linear fixed min-h-screen left-0 bottom-0 min-w-screen bg-white/5 dark:bg-black/5 backdrop-blur-lg z-40"
+      ></div>
+      <!--HEADER-->
       <header
-        class="flex items-center sticky top-2 justify-between md:justify-center md:max-w-240 md:mx-auto px-2 py-1 z-50 bg-grey/10 backdrop-blur-3xl rounded-lg md:px-3 dark:bg-primary/10"
+        class="flex items-center sticky top-2 justify-between md:justify-center md:max-w-240 md:mx-auto px-2 py-1 z-30 bg-primary/5 backdrop-blur-3xl rounded-lg md:px-3 dark:bg-black/5"
       >
         <!--LOGO-->
         <div class="flex items-center gap-2 md:flex-1 md:whitespace-nowrap">
@@ -153,11 +158,11 @@
       <nav
         role="navigation"
         id="mobile-navbar"
-        class="fixed flex -translate-x-50 flex-col items-center bottom-2 top-2 left-2 text-sm duration-500 ease-linear bg-grey/10 backdrop-blur-2xl rounded-xl py-3.5 md:hidden dark:bg-primary/10 z-50"
+        class="fixed flex -translate-x-50 flex-col items-center bottom-2 top-2 left-2 text-sm duration-500 ease-linear bg-primary backdrop-blur-2xl rounded-xl py-3.5 md:hidden dark:bg-slate-950 z-50"
       >
         <div
           id="hide-navbar"
-          class="absolute w-9 h-9 -right-9 top-10 flex items-center justify-center cursor-pointer"
+          class="absolute w-9 h-9 -right-9 top-5 flex items-center justify-center cursor-pointer"
         >
           <img class="w-full" src="/images/remove.png" alt="remove icon" />
         </div>
@@ -227,11 +232,9 @@
             >
           </h3>
         </div>
-        <div
-          class="mt-10 h-90 bg-primary dark:bg-slate-950 overflow-hidden relative"
-        >
+        <div class="mt-10 h-90 bg-transparent overflow-hidden relative">
           <div
-            class="absolute bg-transparent bottom-0 md:top-2/5 left-1/2 -translate-x-1/2 text-center w-full z-40 md:px-12 p-2"
+            class="absolute bg-transparent bottom-0 md:top-2/5 left-1/2 -translate-x-1/2 text-center w-full z-20 md:px-12 p-2"
           >
             <h4
               class="text-grey text-3xl md:text-4xl font-bold w-full dark:text-primary duration-300 ease-linear"
@@ -257,7 +260,7 @@
           </div>
           <div
             style="--quantity: 14"
-            class="bg-white/5 backdrop-blur-3xl rounded-full h-190 w-190 absolute left-1/2 top-0 md:top-2 -translate-x-1/2 items-container md:h-250 md:w-250 text-grey dark:text-primary text-xs before:h-150 before:w-150 before:bg-primary before:content[''] before:absolute before:rounded-full before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-10 dark:before:bg-slate-950 z-20"
+            class="bg-white/5 backdrop-blur-3xl rounded-full h-190 w-190 absolute left-1/2 top-0 md:top-2 -translate-x-1/2 items-container md:h-250 md:w-250 text-grey dark:text-primary text-xs before:h-150 before:w-150 before:bg-primary before:content[''] before:absolute before:rounded-full before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-10 dark:before:bg-slate-950 z-10"
           >
             <div
               style="--position: 1"
@@ -376,6 +379,101 @@
                 alt=""
               />
               <!-- <span>Shadcn ui</span> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--MY SERVICES SECTION-->
+      <section id="services" class="bg-primary dark:bg-slate-950">
+        <div
+          class="text-base font-medium py-2 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg relative bg-transparent"
+        >
+          <h3
+            class="text-8xl font-black opacity-65 text-black dark:text-primary duration-100"
+          >
+            M<span class="text-5xl text-gray-400 opacity-80">Y SERVICES</span>
+          </h3>
+        </div>
+        <!--SKILLS CONTAINER-->
+        <div class="flex flex-col gap-2 bg-transparent p-1.5">
+          <div
+            class="flex items-center gap-2 bg-transparent border-l-6 border-violet-600 px-2 py-2.5"
+          >
+            <div>
+              <img class="w-20" src="./images/responsive.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h5 class="font-semibold text-black dark:text-primary">
+                01. Responsive Web Development
+              </h5>
+              <p class="text-xs text-light-grey">
+                Building modern, responsive websites that work smoothly across
+                desktops, tablets, and mobile devices.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 bg-transparent border-l-6 border-blue-600 px-2 py-2.5"
+          >
+            <div>
+              <img class="w-20" src="./images/ui.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h5 class="font-semibold text-black dark:text-primary">
+                02. UI Implementation
+              </h5>
+              <p class="text-xs text-light-grey">
+                Transforming Figma designs and visual concepts into clean,
+                pixel-perfect, interactive web interfaces.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 bg-transparent border-l-6 border-orange-600 px-2 py-2.5"
+          >
+            <div>
+              <img class="w-20" src="./images/dashboard.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h5 class="font-semibold text-black dark:text-primary">
+                03. Dashboard Development
+              </h5>
+              <p class="text-xs text-light-grey">
+                Developing interactive admin dashboards with data visualization,
+                management interfaces, and dynamic components.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 bg-transparent border-l-6 border-emerald-600 px-2 py-2.5"
+          >
+            <div>
+              <img class="w-20" src="./images/database.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h5 class="font-semibold text-black dark:text-primary">
+                04. Backend & API Integration
+              </h5>
+              <p class="text-xs text-light-grey">
+                Connecting frontend applications to databases, APIs,
+                authentication systems, and backend services.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-2 bg-transparent border-l-6 border-fuchsia-600 px-2 py-2.5"
+          >
+            <div>
+              <img class="w-20" src="./images/shop.png" alt="" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h5 class="font-semibold text-black dark:text-primary">
+                05. E-commerce Development
+              </h5>
+              <p class="text-xs text-light-grey">
+                Creating online stores with product catalogs, shopping carts,
+                user interfaces, and order management features.
+              </p>
             </div>
           </div>
         </div>
