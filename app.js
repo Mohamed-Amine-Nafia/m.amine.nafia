@@ -3,6 +3,8 @@ const hideNavbar = document.getElementById("hide-navbar");
 const mobileNavbar = document.getElementById("mobile-navbar");
 const overlay = document.querySelector(".overlay");
 
+const videoPlay = document.querySelector(".play-btn");
+
 const modeSwith = document.getElementById("mode-switch");
 const modeSwithDesktop = document.getElementById("mode-switch-desktop");
 
@@ -34,6 +36,14 @@ modeSwith.addEventListener("click", () => {
 modeSwithDesktop.addEventListener("click", () => {
   modeSwithDesktop.classList.toggle("translate-x-full");
   addDark();
+});
+
+videoPlay.addEventListener("click", () => {
+  document.getElementsByTagName("video")[0].classList.remove("hidden");
+});
+
+window.addEventListener("scroll", () => {
+  document.getElementsByTagName("video")[0].classList.add("hidden");
 });
 
 footerDate.innerText =
