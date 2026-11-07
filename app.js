@@ -40,10 +40,12 @@ modeSwithDesktop.addEventListener("click", () => {
 
 videoPlay.addEventListener("click", () => {
   document.getElementsByTagName("video")[0].classList.remove("hidden");
+  document.getElementsByTagName("video")[0].play();
 });
 
 window.addEventListener("scroll", () => {
   document.getElementsByTagName("video")[0].classList.add("hidden");
+  document.getElementsByTagName("video")[0].pause();
 });
 
 footerDate.innerText =
