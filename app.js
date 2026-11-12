@@ -52,9 +52,3 @@ window.addEventListener("scroll", () => {
 
 footerDate.innerText =
   "Copyright ©" + date.getFullYear() + "- All right reserved";
-
-cards.forEach((card) =>
-  card.addEventListener("click", () => {
-    card.classList.add("card:hover");
-  }),
-);

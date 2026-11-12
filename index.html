@@ -18,11 +18,11 @@
     >
       <!--OVERLAY-->
       <div
-        class="overlay hidden duration-200 ease-linear fixed min-h-screen left-0 bottom-0 min-w-screen bg-white/5 dark:bg-black/5 backdrop-blur-lg z-40"
+        class="overlay hidden duration-200 ease-linear fixed min-h-screen left-0 bottom-0 min-w-screen bg-white/5 dark:bg-black/5 backdrop-blur-lg z-50"
       ></div>
       <!--HEADER-->
       <header
-        class="flex items-center sticky top-2 justify-between md:justify-center md:max-w-240 md:mx-auto px-2 py-1 z-30 bg-primary/5 backdrop-blur-3xl rounded-lg md:px-3 dark:bg-black/5"
+        class="flex items-center sticky top-2 justify-between md:justify-center md:max-w-240 md:mx-auto px-2 py-1 z-40 bg-primary/20 backdrop-blur-3xl rounded-lg md:px-3 dark:bg-black/5"
       >
         <!--LOGO-->
         <div class="flex items-center gap-2 md:flex-1 md:whitespace-nowrap">
@@ -58,6 +58,11 @@
               class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
             >
               <a href="#about-section">About</a>
+            </li>
+            <li
+              class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
+            >
+              <a href="#services-section">Services</a>
             </li>
             <li
               class="hover:before:w-full before:w-0 before:h-0.5 before:-bottom-1 before:absolute before:content[''] before:bg-grey dark:before:bg-primary before:left-0 relative before:duration-300 before:ease-linear text-grey dark:text-primary"
@@ -215,6 +220,13 @@
               src="./images/info.svg"
               alt="info"
             /><a href="#about-section">About</a>
+          </li>
+          <li class="flex flex-col justify-center items-center gap-1">
+            <img
+              class="w-6 invert-0 dark:invert-100"
+              src="./images/toolbox.svg"
+              alt="info"
+            /><a href="#services-section">Services</a>
           </li>
           <li class="flex flex-col items-center justify-center gap-1">
             <img
@@ -410,7 +422,7 @@
         </div>
       </section>
       <!--MY SERVICES SECTION-->
-      <section id="services" class="bg-transparent dark:bg-slate-950">
+      <section id="services-section" class="bg-transparent dark:bg-slate-950">
         <div
           class="text-base font-medium py-2 duration-300 ease-linear dark:text-primary md:py-3 md:text-lg relative bg-transparent"
         >
