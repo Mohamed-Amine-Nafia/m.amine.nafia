@@ -8,6 +8,8 @@ const videoPlay = document.querySelector(".play-btn");
 const modeSwith = document.getElementById("mode-switch");
 const modeSwithDesktop = document.getElementById("mode-switch-desktop");
 
+const cards = Array.from(document.querySelectorAll(".card"));
+
 const footerDate = document.getElementById("footer-date");
 
 const date = new Date();
@@ -50,3 +52,9 @@ window.addEventListener("scroll", () => {
 
 footerDate.innerText =
   "Copyright ©" + date.getFullYear() + "- All right reserved";
+
+cards.forEach((card) =>
+  card.addEventListener("click", () => {
+    card.classList.add("card:hover");
+  }),
+);
